@@ -18,33 +18,29 @@
             "title": "Application Config",
             "type": "object",
             "properties": {
-                "digital_outputs_enabled": {
-                    "title": "Digital Outputs Enabled",
-                    "x-name": "digital_outputs_enabled",
-                    "x-hidden": false,
-                    "type": "boolean",
-                    "default": true
-                },
-                "a_funny_message": {
-                    "title": "A Funny Message",
-                    "x-name": "a_funny_message",
-                    "x-hidden": false,
-                    "type": "string"
-                },
-                "simulator_app_key": {
-                    "format": "doover-application",
-                    "title": "Simulator App Key",
-                    "x-name": "simulator_app_key",
+                "logo_url": {
+                    "title": "Logo URL",
+                    "x-name": "logo_url",
                     "x-hidden": false,
                     "type": "string",
-                    "description": "The app key for the simulator"
+                    "description": "The URL of the logo to display",
+                    "default": "https://doover.com/wp-content/uploads/2025/02/Blue-Background-2.png"
+                },
+                "max_logo_height": {
+                    "title": "Max Logo Height",
+                    "x-name": "max_logo_height",
+                    "x-hidden": false,
+                    "type": "number",
+                    "description": "The maximum height of the logo in pixels",
+                    "default": 150.0
                 }
             },
             "additionalElements": true,
-            "required": [
-                "a_funny_message",
-                "simulator_app_key"
-            ]
-        }
+            "required": []
+        },
+        "key": "9546ec39-e394-456e-89ab-6fe10dc0a11b",
+        "code_repo_key": null,
+        "repo_branch": "main",
+        "staging_config": {}
     }
 }
