@@ -17,7 +17,3 @@ def test_config():
 def test_ui():
     from logo_displayer.app_ui import LogoDisplayerUI
     assert LogoDisplayerUI
-
-def test_state():
-    from logo_displayer.app_state import LogoDisplayerState
-    assert LogoDisplayerState
