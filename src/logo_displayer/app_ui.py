@@ -7,7 +7,7 @@ class LogoDisplayerUI:
         self.logo = ui.RemoteComponent(
             "logo",
             "Logo",
-            position=1000,
+            position=self.config.position.value,
             component_url="https://getdoover.github.io/image-loader/ImageLoader.js",
             image_url=self.config.logo_url.value,
             max_height=self.config.max_logo_height.value,

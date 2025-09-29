@@ -17,6 +17,14 @@ class LogoDisplayerConfig(config.Schema):
             default=150.0
         )
 
+        self.position = config.Integer(
+            "Position",
+            default=80,  # fairly high
+            minimum=0,
+            maximum=999,
+            description="The position of the logo in the UI. Smaller is higher, larger is lower. 100 is the default position of most apps.",
+        )
+
 def export():
     LogoDisplayerConfig().export(Path(__file__).parents[2] / "doover_config.json", "logo_displayer")
 

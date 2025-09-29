@@ -8,6 +8,7 @@
         "description": "An app to display a logo in the UI.",
         "long_description": "README.md",
         "depends_on": [],
+        "owner_org": "36a22e32-ab81-4a39-b400-869d532a052d",
         "owner_org_key": "36a22e32-ab81-4a39-b400-869d532a052d",
         "image_name": "ghcr.io/getdoover/logo-displayer:main",
         "container_registry_profile_key": "88953909-e9c4-4f81-9ec0-56239d4b0a2e",
@@ -33,6 +34,16 @@
                     "type": "number",
                     "description": "The maximum height of the logo in pixels",
                     "default": 150.0
+                },
+                "position": {
+                    "title": "Position",
+                    "x-name": "position",
+                    "x-hidden": false,
+                    "type": "integer",
+                    "description": "The position of the logo in the UI. Smaller is higher, larger is lower. 100 is the default position of most apps.",
+                    "default": 80,
+                    "minimum": 0,
+                    "maximum": 999
                 }
             },
             "additionalElements": true,
